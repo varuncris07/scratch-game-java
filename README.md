@@ -1,6 +1,7 @@
 # Scratch Game - Java CLI Project
 
-This is a **Java-based Scratch Card Game** that simulates a reward-based matrix game using a configurable symbol probability system. The game determines the user's reward based on matching symbol patterns, bonus symbols, and defined rules.
+This is a **Java-based Scratch Card Game** that simulates a reward-based matrix game using a configurable symbol probability system.
+The game determines the user's reward based on matching symbol patterns, bonus symbols, and defined rules.
 
 ---
 
@@ -49,10 +50,10 @@ Anyone using IntelliJ can clone and run this project with zero setup.
    - IntelliJ will automatically detect `pom.xml` and download all dependencies.
 
 3. Open the Main Class
-   - Navigate to: `src/main/java/com/scratch/Main.java`
+   - Navigate to: `src/main/java/com/scratch/ScratchGameApplication.java`
 
 4. Run the Program
-   - Right-click anywhere inside the file → Click Run 'Main.main()'
+   - Right-click anywhere inside the file → Click Run 'ScratchGameApplication.main()'
 
 5. (Optional) Pass CLI Arguments**
    - Go to `Run → Edit Configurations`
