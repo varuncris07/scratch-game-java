@@ -42,25 +42,26 @@ Anyone using IntelliJ can clone and run this project with zero setup.
 
 ## How to Run
 
-1. **Open IntelliJ IDEA**
+1. Open IntelliJ IDEA
    - Go to `File → Open`, and select the cloned project folder.
 
-2. **Wait for Maven to Load**
+2. Wait for Maven to Load
    - IntelliJ will automatically detect `pom.xml` and download all dependencies.
 
-3. **Open the Main Class**
+3. Open the Main Class
    - Navigate to: `src/main/java/com/scratch/Main.java`
 
-4. **Run the Program**
-   - Right-click anywhere inside the file → Click **Run 'Main.main()'**
+4. Run the Program
+   - Right-click anywhere inside the file → Click Run 'Main.main()'
 
-5. **(Optional) Pass CLI Arguments**
+5. (Optional) Pass CLI Arguments**
    - Go to `Run → Edit Configurations`
-   - Under the **"Program arguments"** field, enter:
+   - Under the "Program arguments" field, enter:
 
      ```
      --config src/main/resources/config.json --betting-amount 100
+     
      ```
 
-6. **Apply and Run**
-   - Click **Apply** → **OK**, then rerun the program to test with arguments.
+6. Apply and Run
+   - Click Apply → OK, then rerun the program to test with arguments.
