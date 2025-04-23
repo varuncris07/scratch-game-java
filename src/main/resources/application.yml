@@ -1,0 +1,17 @@
+app:
+  name: Scratch Game
+  version: 1.0
+
+betting:
+  defaultAmount: 100
+  maxAmount: 1000
+
+symbols:
+  - name: STAR
+    type: bonus
+    impact: multiply_reward
+    rewardMultiplier: 10
+
+  - name: GOLD
+    type: standard
+    rewardMultiplier: 5
