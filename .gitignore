@@ -1,0 +1,29 @@
+# Maven
+/target/
+*.class
+*.jar
+*.war
+*.ear
+
+# IntelliJ
+.idea/
+*.iml
+*.iws
+out/
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Coverage & test reports
+/test-output/
+/coverage/
+/jacoco.exec
+
+# Temporary files
+*.swp
+*.bak
+*~
