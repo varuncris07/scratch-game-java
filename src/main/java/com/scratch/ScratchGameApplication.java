@@ -15,7 +15,7 @@ public class ScratchGameApplication {
         String configPath = null;
         Double betAmount = null;
 
-        // 1) Parse CLI args in any order
+
         for (int i = 0; i < args.length; i++) {
             switch (args[i]) {
                 case "--config":
@@ -29,24 +29,24 @@ public class ScratchGameApplication {
                     }
                     break;
                 default:
-                    // ignore unknown flags
+
             }
         }
 
-        // 2) Validate that betAmount was provided
+
         if (betAmount == null) {
             System.err.println("Usage: java -jar scratch-game.jar [--config <path>] --betting-amount <amount>");
             return;
         }
 
         try {
-            // 3) Load Config
+
             Config config;
             if (configPath != null) {
-                // from filesystem
+
                 config = mapper.readValue(new File(configPath), Config.class);
             } else {
-                // from classpath: src/main/resources/config.json
+
                 try (InputStream in = ScratchGameApplication.class
                         .getClassLoader()
                         .getResourceAsStream("config.json")) {
@@ -58,10 +58,10 @@ public class ScratchGameApplication {
                 }
             }
 
-            // 4) Play the game
+
             GameResult result = new GameEngine(config, betAmount).play();
 
-            // 5) Print pretty JSON
+
             System.out.println(
                     mapper.writerWithDefaultPrettyPrinter()
                             .writeValueAsString(result)

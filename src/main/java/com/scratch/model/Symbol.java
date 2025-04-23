@@ -13,7 +13,7 @@ public class Symbol {
     private String impact;
     private Integer extra;
 
-    // Getters and setters
+
 
     public String getType() { return type; }
     public void setType(String type) { this.type = type; }
